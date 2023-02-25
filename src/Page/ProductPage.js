@@ -31,7 +31,6 @@ const ProductPage = () => {
     console.log(value);
     if (window.confirm("You sure want delete this product?") == true) {
       const req = await ProductAPI.delete(value);
-      window.location.reload(false);
     }
     return;
   };
