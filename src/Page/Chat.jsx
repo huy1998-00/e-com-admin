@@ -5,7 +5,9 @@ import AuthContext from "../context/auth";
 import ChatAPI from "../Axios/ChatAPI";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000", { transports: ["websocket"] });
+const socket = io("https://e-com-server.onrender.com", {
+  transports: ["websocket"],
+});
 const Chat = () => {
   const { user } = useContext(AuthContext);
 

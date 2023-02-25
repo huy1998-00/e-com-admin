@@ -20,7 +20,7 @@ const ProductForm = () => {
       formData.append("files", file);
     }
     const request = await axios.post(
-      `http://localhost:5000/products/addproduct`,
+      `https://e-com-server.onrender.com/products/addproduct`,
       formData,
       {
         headers: {
